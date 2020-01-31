@@ -5,6 +5,7 @@
 #results/
 temp/
 test/
+data_numpyarray/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
