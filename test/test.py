@@ -1,5 +1,5 @@
 import os
-import tensorflow
+import tensorflow as tf
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -61,4 +61,5 @@ model.add(Conv2D(3, kernel_size=(3, 3), activation='sigmoid', padding='same'))
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.summary()
 
-plot_model(model, './test/model.png', show_shapes=True)
+model.fit(train_data, train_data, epochs=100, shuffle=True, batch_size=1)
+model.save('./results/model/CAE.h5')
