@@ -4,7 +4,7 @@
 #*.h5
 #results/
 temp/
-#test/
+test/
 data_numpyarray/
 
 # Byte-compiled / optimized / DLL files
