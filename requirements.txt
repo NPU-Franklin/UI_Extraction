@@ -1,6 +1,5 @@
 os
 numpy
-scipy
 matplotlib
 tensorflow>=2.0.0
 keras>=2.2.4
