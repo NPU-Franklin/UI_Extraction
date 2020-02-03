@@ -101,13 +101,18 @@ encoder_output = encoder_output.reshape(len(encoder_output), 49152)
 def R_entropy(f, s):
     KL = 0
     for i, j in zip(encoder_output[f,:], encoder_output[s,:]):
-        if any(i == 0):
-            continue
-        else:
-            KL += i * np.log(i / (1 / 2 * i + 1 / 2 * j))
-    print("characteristic value: %.7f"%KL)
+        if (1 / 2 * i + 1 / 2 * j) != 0:
+            if i != 0:
+                KL += i * np.log(i / (1 / 2 * i + 1 / 2 * j))
+    print("\n-----------------------------------------------------------------------")
+    print("The smaller the characteristic value is the similar two images are.")
+    print("(characteristic value >= 0)")
+    print("-----------------------------------------------------------------------")
+    print("\ncharacteristic value: %.10f"%KL)
+    print("\n")
 
-print("Please input the first image you want to compare: ")
+
+print("\nPlease input the first image you want to compare: ")
 f = int(input())
 print("Please input the second image you want to compare:")
 s = int(input())
