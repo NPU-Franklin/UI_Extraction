@@ -22,9 +22,9 @@ from keras.callbacks import TensorBoard
 
 # Requires TensorFlow 2.0.0 + and Keras 2.2.4+.
 from distutils.version import LooseVersion
-if LooseVersion(tf.__version__) >= LooseVersion("2.0.0"):
+if LooseVersion(tf.__version__) <= LooseVersion("1.3.0"):
     print("WARNING: Your tensorflow version might be a little bit low to run it!")
-if LooseVersion(keras.__version__) >= LooseVersion("2.2.4"):
+if LooseVersion(keras.__version__) <= LooseVersion("2.0.8"):
     print("WARNING: Your keras version might be a little bit low to run it!")
 
 # Set font size and figure size.
