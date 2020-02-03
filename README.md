@@ -1,4 +1,4 @@
-# UI_Extraction for Image Convolutional Autoencode and Compare [^Author]
+# UI_Extraction for Image Convolutional Autoencode and Compare
 This is an implementation of  Autoencoder and image comparison on Python 3, Keras, and Tensorflow. It's based on traditional Autoencoder and Relative entropy. Licensed under GPL-3.0 License (see LICENSE for details)
 
 The repository includes:
@@ -25,6 +25,6 @@ The repository includes:
 * opencv-python
 * IPython[all]
 
-[^Author]:NPU-Franklin@Github.com
+***Author: NPU-Franklin@Github.com***
 
 ***Time: 2020-2-3 16:25:35*** 
